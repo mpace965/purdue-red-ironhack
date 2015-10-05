@@ -2,7 +2,23 @@
 <head>
    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
 </head>
-<body layout="column" ng-controller="AppCtrl">
+<body flex layout="column" ng-controller="AppCtrl">
+
+  <md-toolbar layout="row">
+    <div class="md-toolbar-tools">
+      <h2 class="md-display-1">Take me to Chicago!</h2>
+    </div>
+  </md-toolbar>
+
+  <div flex layout="column" layout-align="center center" layout-wrap>
+    <h1 class="md-display-3">When is the latest you'd be willing to leave?</h1>
+    <md-datepicker ng-model="pickedDate" md-min-date="yesterday" md-max-date="oneYear"></md-datepicker>
+    <p>or</p>
+    <div layout="row" layout-align="center center" layout-wrap>
+      <md-button class="md-raised">3 Months</md-button>
+      <md-button class="md-raised">6 Months</md-button>
+    </div>
+  </div>
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
