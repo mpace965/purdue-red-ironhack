@@ -4,12 +4,7 @@
 </head>
 <body flex layout="column" ng-app="myApp">
 
-  <md-toolbar layout="row">
-    <div class="md-toolbar-tools">
-      <h2 class="md-display-1">Take me to Chicago!</h2>
-    </div>
-  </md-toolbar>
-
+  <toolbar></toolbar>
   <md-content flex layout="column" layout-align="center center" ng-view></md-content>
 
   <script src="bower_components/angular/angular.js"></script>
@@ -21,8 +16,9 @@
   <!-- Modules -->
   <script src="app.js"></script>
 
-  <!-- Controllers -->
+  <!-- Views -->
   <script src="home/home.js"></script>
   <script src="trip/trip.js"></script>
+  <script src="toolbar/toolbar.js"></script>
 </body>
 </html>
