@@ -5,6 +5,6 @@ app.directive('toolbar', function() {
   };
 });
 
-app.controller('ToolbarController', ['$scope', function($scope){
+app.controller('ToolbarController', ['$scope', function($scope) {
   
 }]);

@@ -1,8 +1,8 @@
-var app = angular.module('myApp', ['ngRoute', 'ngMaterial'])
+var app = angular.module('myApp', ['ngRoute', 'ngMaterial', 'ngMdIcons'])
 
 app.config(function($routeProvider) {
   $routeProvider
-    .when('/', {
+    .when('/home', {
       controller: 'HomeController',
       templateUrl: 'home/home.html'
     })
@@ -11,6 +11,6 @@ app.config(function($routeProvider) {
       templateUrl: 'trip/trip.html'
     })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/home'
     })
 });
