@@ -6,6 +6,10 @@ app.config(function($routeProvider) {
       controller: 'HomeController',
       templateUrl: 'home/home.html'
     })
+    .when('/trip/:year/:month/:day', {
+      controller: 'TripController',
+      templateUrl: 'trip/trip.html'
+    })
     .otherwise({
       redirectTo: '/'
     })
