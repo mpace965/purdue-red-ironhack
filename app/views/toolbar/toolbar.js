@@ -1,10 +1,10 @@
 app.directive('toolbar', function() {
   return {
     restrict: 'E',
-    templateUrl: 'toolbar/toolbar.html'
+    templateUrl: 'views/toolbar/toolbar.html'
   };
 });
 
 app.controller('ToolbarController', ['$scope', function($scope) {
-  
+
 }]);
