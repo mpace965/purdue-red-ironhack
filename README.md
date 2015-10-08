@@ -8,7 +8,7 @@ However, what happens now is the proof of concept. The trip page that the user i
 
 ### Running the App
 
-Running the app should be as simple as cloning this repository and opening index.html.
+Running the app should be as simple as cloning this repository, setting it up on an http server, and navigating to it in your web browser.
 
 ## Objective
 
