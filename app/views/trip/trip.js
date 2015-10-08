@@ -31,10 +31,12 @@ function weatherChart(date) {
 
   d3.json("/app/data/weather.min.json", function(error, json) {
     var data = [];
-    var loopDate = new Date();
+    var loopDate = date;
+    loopDate = loopDate.addDays(-3); //start from 3 days past and go forward
 
     for (i = 0; i < 7; i++) {
-      loopDate.setDate(date.getDate() - 3 + i); //start from 3 days past and go forward
+      loopDate = loopDate.addDays(1);
+      console.log(loopDate);
       var key = getWeatherKey(loopDate);
       data.push({date: getPrettyDate(loopDate), temp: Math.round(json[key].TOBS)});
     }
@@ -68,8 +70,17 @@ function weatherChart(date) {
   });
 }
 
+//setDate directly mutates the object, best to avoid that
+//http://stackoverflow.com/questions/563406/add-days-to-datetime
+Date.prototype.addDays = function(days)
+{
+    var dat = new Date(this.valueOf());
+    dat.setDate(dat.getDate() + days);
+    return dat;
+}
+
 function getPrettyDate(date) {
-  return "" + date.getMonth() + "/" + date.getDate();
+  return "" + (date.getMonth() + 1) + "/" + date.getDate();
 }
 
 function getWeatherKey(date) {
