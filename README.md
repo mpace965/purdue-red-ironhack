@@ -1,5 +1,15 @@
 # purdue-red-ironhack
 
+## v0.1 Release Notes
+
+v0.1 of the app, submitted for judging on 10/8/2015 is mostly a proof of concept, and the result of actually applying the learning I did with the Angular and d3.js frameworks. The concept behind the home page is that the app asks the user when the latest they'd like to leave is. When the app is finished, it will scan through all of the days in the range the user specifies, and choose the best day for them to go, taking into account different weights from the data sets.
+
+However, what happens now is the proof of concept. The trip page that the user is taken to displays the weather data and crime data of the days surrounding the selected day. The graph code is adapted from the tutorial found [here](http://bost.ocks.org/mike/bar/). I am not sure whether or not I will use these graphs in the final product, but this tutorial was definitely a worthwhile learning experience.
+
+### Running the App
+
+Running the app should be as simple as cloning this repository and opening index.html.
+
 ## Objective
 
 The goal of this app is to take its users from West Lafayette to Chicago with a happy face!
