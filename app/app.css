@@ -1,5 +1,9 @@
-.bar {
+.weather-bar {
   fill: steelblue;
+}
+
+.crime-bar {
+  fill: crimson;
 }
 
 .axis text {

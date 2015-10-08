@@ -1,6 +1,10 @@
 <div flex layout="row" layout-align="center center" layout-fill>
   <div layout="column" layout-align="center center">
-    <svg class="chart"></svg>
-    <p>Showing the average temperature on days surrounding {{ leaveDate | date }}.</p>
+    <svg class="weather-chart"></svg>
+    <p>Showing the average temperature from 2010-2014 on days surrounding {{ leaveDate | date }}.</p>
+  </div>
+  <div layout="column" layout-align="center center">
+    <svg class="crime-chart"></svg>
+    <p>Showing the crime count from 2014 on days surrounding {{ leaveDate | date }}.</p>
   </div>
 </div>
