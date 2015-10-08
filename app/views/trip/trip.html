@@ -1,3 +1,6 @@
-<div flex layout="column" layout-align="center center" layout-fill>
-  <svg class="chart"></svg>
+<div flex layout="row" layout-align="center center" layout-fill>
+  <div layout="column" layout-align="center center">
+    <svg class="chart"></svg>
+    <p>Showing the average temperature on days surrounding {{ leaveDate | date }}.</p>
+  </div>
 </div>
